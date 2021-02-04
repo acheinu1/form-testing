@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+  
+    <link rel="stylesheet" href="./register.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+  <body>
+    <section class="body">
+    <div class="container">
+      <header>HHFX Training registration form</header>
+    <div class="progress-bar">
+        <div class="step">
+          <p>Personal</p>
+          <div class="bullet"><span><i class="fas fa-user"></i></span></div>
+          <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+          <p>Contact</p>
+          <div class="bullet"><span><i class="fas fa-mobile-alt"></i></span></div>
+          <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+          <p>details</p>
+          <div class="bullet"><span><i class="fas fa-pen"></i></span></div>
+          <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+          <p>Course</p>
+          <div class="bullet"><span><i class="fas fa-graduation-cap"></i></span></div>
+          <div class="check fas fa-check"></div>
+      </div>
+    </div>
+    <!-- ==================end of progress bar============= -->
+    <div class="form-outer">    
+        <form action="#">
+          <!-- ===form one========= -->
+          <div class="page slide-page">
+            <div class="title">Basic Info:</div>
+          <!-- =====fullname input===== -->
+            <div class="field">
+                <div class="label">Full Names</div>
+                <input type="text" id="fname">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span class="error"  style="color: red; font-size: 13px; margin-bottom: 50px;" id="error1"></span>
+            </div>
+            <!-- <span class="error"  style="color: red; font-size: 13px; margin-bottom: 50px;" id="error1"></span> -->
+          <!-- =====gender input===== -->
+            <div class="field">
+              <div class="label">Gender</div>
+            <select id="gender">
+                <option>select your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error2"></span> <br>
+            </div>
+           
+          <!-- =====btn1=============== -->
+            <div class="field">
+              <button class="firstNext next">Next</button>
+            </div>
+          </div>
+          <!-- ========form 2========== -->
+          <div class="page">
+          <div class="title">Contact Info:</div>
+          <!-- =====email input======== -->
+              <div class="field form-control">
+                    <div class="label">Email Address</div><input type="text" id="email">
+                    <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error3"></span> <br>
+              </div>
+                
+          <!-- =====phone number input======== -->      
+              <div class="field">
+                  <div class="label">Phone Number</div><input type="number" id="number">
+                  <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error4"></span> <br>
+              </div>
+             
+          <!-- =====home address input======== -->
+               <div class="field">
+                  <div class="label">Home Address</div><input type="text" id="address" >
+                  <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error5"></span> <br>
+              </div>
+                <div class="field btns">
+                  <button class="prev-1 prev">Previous</button>
+                  <button class="next-1 next">Next</button>
+                </div>
+          </div>
+          <!-- =======form 3========== -->
+          <div class="page">
+            <div class="title">Date of Birth:</div>
+                <div class="field form-control">
+                <div class="label">Date</div><input type="text" id="date">
+                <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error6"></span> <br>
+            </div>
+            <div class="field">
+              <div class="label">Marital status</div>
+            <select id="marital">
+                <option>select your Marital status</option>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+            </select>
+            <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error7"></span> <br>
+            </div>
+            <div class="field btns">
+              <button class="prev-2 prev">Previous</button>
+              <button class="next-2 next">Next</button>
+            </div>
+          </div>
+  <!-- ============form 4-=========================== -->
+<div class="page">
+            <div class="title" style="margin-bottom: 20px;">Learning schedule:</div>
+            <p> <i class="fas fa-check"></i> <strong>REGULAR COURSE:</strong> Mon & Thurs or Tues & Fri  <span>first section </span> 11:00am - 1:00pm <span>Second section </span> 1:00pm - 3:30pm</p>
+            <p> <i class="fas fa-check"></i> <strong>WEEKEND COURSE:</strong><span>Saturdays </span>10:00am - 2:00pm</p>
+            <p> <i class="fas fa-check"></i> <strong>INTENSIVE COURSE:</strong> Weekdays  9:00am - 10:30am <span>Wednessday</span> 1:00pm - 3:00pm</p>
+            <div class="field form-control"> 
+              <!-- <div class="label">Forex Knowledge</div> -->
+            <select id="Knowledge" >
+                <option>any prior knowlegde of forex ?</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+             <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error8"></span> <br>
+            </div>
+            <div class="field">
+              <!-- <div class="label">learning schedule</div> -->
+            <select id="course">
+                <option>choose your learning schedule</option>
+                <option>Regular Course</option>
+                <option>Intensive Course</option>
+                <option>Weekend Course</option>
+            </select>
+            <span class="error" style="color: red; font-size: 13px; margin-bottom: 50px;" id="error9"></span> <br>
+            </div>
+            <div class="field btns">
+              <button class="prev-3 prev">Previous</button>
+              <button class="submit">Submit</button>
+            </div>
+</div>
+<!-- ============form5---------------===================== -->
+<div class="page  sucesspage">
+  <!-- <div class="title">sucess:</div> -->
+  
+  <h2 class="title"></h2><strong style="color: rgb(5, 255, 88); font-size: 60px; font-weight: 300;">SUCCESS !</strong></h2> 
+  <div>
+      <div> <img src="./assets/images/MARK.png" class="fit-image"> </div>
+  </div> 
+  <div>
+      <div class="successmsg" style="color: #036ecc;">
+          <p>You Have Successfully Registered for forex training with HHFX</p>
+          <p>our team would get in contact with you shortly thanks<p>
+
+      </div>
+  </div>
+
+
+
+  <div class="field btns">
+   <a href=""><button class="prev-3 prev homebtn">back home</button></a>
+    <!-- <button class="submit">Submit</button> -->
+  </div>
+</div>
+<!-- ================================== -->
+</form>
+</div>
+</div>
+
+</section>
+<script src="./register.js"></script>
+  </body>
+</html>
